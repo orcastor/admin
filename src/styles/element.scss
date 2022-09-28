@@ -1,0 +1,239 @@
+// * 设置 notification/message 层级在 loading 之上
+.el-message,
+.el-notification {
+  z-index: 99999 !important;
+}
+
+// * card 卡片样式
+.card {
+  box-sizing: border-box;
+  padding: 20px;
+  overflow-x: hidden;
+  background-color: var(--el-fill-color-blank);
+  border: 1px solid var(--el-border-color-light);
+  border-radius: 4px;
+  box-shadow: 0 0 12px rgb(0 0 0 / 5%);
+}
+
+// * 不需要 card 卡片样式（在组件内使用 proTable 会使用到）
+.no-card {
+  .card {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+// * main-box (树形表格页面会使用，左右布局 flex)
+.main-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  .table-box {
+    width: calc(100% - 240px);
+  }
+}
+
+// * content-box (常用内容盒子)
+.content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  .text {
+    margin: 20px 0 30px;
+    font-size: 23px;
+    font-weight: bold;
+    color: rgb(88 88 88);
+  }
+  .el-descriptions {
+    width: 100%;
+    padding: 40px 0 0;
+    .el-descriptions__title {
+      font-size: 18px;
+    }
+    .el-descriptions__label {
+      width: 200px;
+    }
+  }
+}
+
+// * table-box 表格页面样式
+.table-box,
+.table {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  // table-search 表格搜索样式
+  .table-search {
+    display: flex;
+    padding: 18px 18px 0;
+    margin-bottom: 10px;
+    .el-form {
+      flex: 1;
+      .el-form-item {
+        margin-right: 5px;
+        .el-input,
+        .el-select,
+        .el-date-editor--timerange {
+          width: 210px;
+        }
+        .el-date-editor--datetimerange,
+        .el-date-editor--daterange {
+          width: 380px;
+        }
+
+        // 去除时间选择器上下 padding
+        .el-range-editor.el-input__wrapper {
+          padding: 0 10px;
+        }
+
+        // el-select 为多选时不换行显示
+        .el-select__tags {
+          overflow: hidden;
+          white-space: nowrap;
+        }
+      }
+    }
+    .search-operation {
+      margin-left: 15px;
+      white-space: nowrap;
+      .search-isOpen {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  // 表格 header 样式
+  .table-header {
+    .header-button-lf {
+      float: left;
+      .el-button {
+        margin-bottom: 15px;
+      }
+    }
+    .header-button-ri {
+      float: right;
+      .el-button {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  // el-table 表格样式
+  .el-table {
+    // 表格自适应撑满整个页面(设置了 flex:1,页面上表格必须添加 height 属性)
+    flex: 1;
+    .el-table__header th,
+    .el-table__body td {
+      text-align: center;
+    }
+    .el-table__header th {
+      height: 45px;
+      font-size: 15px;
+      font-weight: bold;
+      color: #252525;
+      background: #fafafa;
+    }
+    .el-table__row {
+      height: 45px;
+    }
+
+    // 设置 el-table 中 header 文字不换行
+    .el-table__header .el-table__cell > .cell {
+      white-space: nowrap;
+    }
+
+    // 解决表格数据为空时样式不居中问题(仅在element-plus中)
+    .el-table__empty-block {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .table-empty {
+        line-height: 30px;
+      }
+    }
+
+    // table 中 image 图片样式
+    .table-image {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+  }
+
+  // 表格 pagination 样式
+  .el-pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+}
+
+// * el-table 组件大小切换样式
+.el-table--large {
+  .el-table__row,
+  .el-table__header th {
+    height: 52px !important;
+    font-size: 16px !important;
+  }
+}
+.el-table--small {
+  .el-table__row,
+  .el-table__header th {
+    height: 38px !important;
+    font-size: 14px !important;
+  }
+}
+
+// * el-drawer 样式
+.el-drawer {
+  // drawer header 样式
+  .el-drawer__header {
+    padding: 15px 20px 14px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ebeef5;
+    span {
+      font-size: 17px;
+      color: #303133;
+    }
+  }
+
+  // drawer header 样式
+  .el-drawer__footer {
+    border-top: 1px solid #ebeef5;
+  }
+  .el-select {
+    width: 100%;
+  }
+
+  // drawer-form 中两列 form-item
+  .drawer-multiColumn-form {
+    display: flex;
+    flex-wrap: wrap;
+    .el-form-item {
+      width: 47%;
+      &:nth-child(2n-1) {
+        margin-right: 5%;
+      }
+    }
+  }
+}
+
+// * el-dialog 样式
+.el-dialog {
+  .el-dialog__header {
+    padding: 15px 20px;
+    margin: 0;
+    border-bottom: 1px solid #f0f0f0;
+    .el-dialog__title {
+      font-size: 17px;
+    }
+  }
+}
