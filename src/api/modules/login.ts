@@ -20,5 +20,14 @@ export const loginApi = (params: Login.ReqLoginForm) => {
 
 // * 获取菜单列表
 export const getMenuList = () => {
-  return {};
+  return {
+    "code": 200,
+    "data": [
+      {
+        "icon": "home-filled",
+        "title": "首页",
+        "path": "/home/index"
+      }],
+      "msg": "成功"
+    };
 };

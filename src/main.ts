@@ -20,8 +20,6 @@ import "element-plus/theme-chalk/dark/css-vars.css";
 import "@/styles/theme/element-dark.scss";
 // custom element css
 import "@/styles/element.scss";
-// custom directives
-import directives from "@/directives/index";
 // vue Router
 import router from "@/routers/index";
 // vue i18n
@@ -42,6 +40,5 @@ app
   .use(router)
   .use(I18n)
   .use(pinia)
-  .use(directives)
   .use(ElementPlus)
   .mount("#app");

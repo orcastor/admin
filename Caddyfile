@@ -1,0 +1,9 @@
+localhost {
+	root * ./dist
+	file_server
+	reverse_proxy /api/* 127.0.0.1:7983
+}
+
+:7983 {
+	reverse_proxy :7982
+}
