@@ -1,2 +1,2 @@
 // * 后端微服务端口名
-export const PORT1 = "//localhost:7982";
+export const PORT1 = "//localhost/api";
