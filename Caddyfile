@@ -1,6 +1,7 @@
 localhost {
 	root * ./dist
 	file_server
+	encode gzip
 	reverse_proxy /api/* 127.0.0.1:7983
 }
 
