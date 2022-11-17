@@ -1,0 +1,3 @@
+[server.http]
+    port = 7983
+    host = "0.0.0.0"
