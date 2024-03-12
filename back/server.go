@@ -9,7 +9,7 @@ import (
 	"github.com/orcastor/orcas/rpc/middleware"
 )
 
-// EGO_DEBUG=true EGO_LOG_EXTRA_KEYS=uid ORCAS_BASE=/tmp/test ORCAS_DATA=/tmp/test ORCAS_SECRET=xxxxxxxx egoctl run --runargs --config=config.toml
+// ORCAS_CACHE=/opt/orcas_cache EGO_DEBUG=true EGO_LOG_EXTRA_KEYS=uid ORCAS_BASE=/opt/orcas ORCAS_DATA=/opt/orcas_disk ORCAS_SECRET=xxxxxxxx egoctl run --runargs --config=config.toml
 // go run server.go --config=config.toml
 func main() {
 	core.InitDB()
@@ -21,6 +21,7 @@ func main() {
 		server.Use(middleware.JWT())
 
 		api := server.Group("/admin/api")
+		api.POST("/login", login)
 		api.POST("/add_user", addUser)
 		return server
 	}()).Run(); err != nil {

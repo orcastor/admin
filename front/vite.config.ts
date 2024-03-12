@@ -124,9 +124,9 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
 			rollupOptions: {
 				output: {
 					// Static resource classification and packaging
-					chunkFileNames: "assets/js/[name]-[hash].js",
-					entryFileNames: "assets/js/[name]-[hash].js",
-					assetFileNames: "assets/[ext]/[name]-[hash].[ext]"
+					chunkFileNames: "admin/assets/js/[name]-[hash].js",
+					entryFileNames: "admin/assets/js/[name]-[hash].js",
+					assetFileNames: "admin/assets/[ext]/[name]-[hash].[ext]"
 				}
 			}
 		}

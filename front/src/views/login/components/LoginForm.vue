@@ -5,16 +5,16 @@
     :rules="loginRules"
     size="large"
   >
-    <el-form-item prop="username">
-      <el-input v-model="loginForm.username" placeholder="用户名：orcas">
+    <el-form-item prop="u">
+      <el-input v-model="loginForm.u" placeholder="用户名：orcas">
         <template #prefix>
           <el-icon class="el-input__icon"><user /></el-icon>
         </template>
       </el-input>
     </el-form-item>
-    <el-form-item prop="password">
+    <el-form-item prop="p">
       <el-input
-        v-model="loginForm.password"
+        v-model="loginForm.p"
         type="password"
         placeholder="密码：orcas"
         show-password
@@ -68,14 +68,14 @@ const tabStore = TabsStore();
 type FormInstance = InstanceType<typeof ElForm>;
 const loginFormRef = ref<FormInstance>();
 const loginRules = reactive({
-  username: [{ required: true, message: "请输入用户名", trigger: "blur" }],
-  password: [{ required: true, message: "请输入密码", trigger: "blur" }],
+  u: [{ required: true, message: "请输入用户名", trigger: "blur" }],
+  p: [{ required: true, message: "请输入密码", trigger: "blur" }],
 });
 
 // 登录表单数据
 const loginForm = reactive<Login.ReqLoginForm>({
-  username: "",
-  password: "",
+  u: "",
+  p: "",
 });
 
 const loading = ref(false);

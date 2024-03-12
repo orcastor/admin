@@ -27,3 +27,8 @@
 - 审计日志、访问日志、应用日志
 - 升级管理：支持自动更新和离线更新
 #### \[其他插件\]...
+
+### 注意事项 
+
+- `npm run build:pro`打包后的文件和webapp的放置到一起：
+`ln -s $(admin)/front/dist $(webapp)/dist/prvw`

@@ -53,7 +53,8 @@ github.com/alecthomas/units v0.0.0-20190717042225-c3de453c63f4/go.mod h1:ybxpYRF
 github.com/alecthomas/units v0.0.0-20190924025748-f65c72e2690d/go.mod h1:rBZYJk541a8SKzHPHnH3zbiI+7dagKZ0cgpgrD7Fyho=
 github.com/alibaba/sentinel-golang v1.0.3 h1:x/04ZV3ONFsLaNYC/tOEEaZZQIJjhxDSxwZGxiWOQhY=
 github.com/alibaba/sentinel-golang v1.0.3/go.mod h1:Lag5rIYyJiPOylK8Kku2P+a23gdKMMqzQS7wTnjWEpk=
-github.com/andybalholm/brotli v1.0.1/go.mod h1:loMXtMfwqflxFJPmdbJO0a3KNoPuLBgiu3qAvBg8x/Y=
+github.com/andybalholm/brotli v1.0.4 h1:V7DdXeJtZscaqfNuAdSRuRFzuiKlHSC/Zh3zl9qY3JY=
+github.com/andybalholm/brotli v1.0.4/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHGRSepvi9Eig=
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
 github.com/antlr/antlr4/runtime/Go/antlr v0.0.0-20220418222510-f25a4f6275ed h1:ue9pVfIcP+QMEjfgo/Ez4ZjNZfonGgR6NgjMaJMu1Cg=
 github.com/antlr/antlr4/runtime/Go/antlr v0.0.0-20220418222510-f25a4f6275ed/go.mod h1:F7bn7fEU90QkQ3tnmaTx3LTKLEDqnwWODIYppRQ5hnY=
@@ -281,7 +282,7 @@ github.com/grpc-ecosystem/grpc-gateway v1.16.0 h1:gmcG1KaJ57LophUzW0Hy8NmPhnMZb4
 github.com/grpc-ecosystem/grpc-gateway v1.16.0/go.mod h1:BDjrQk3hbvj6Nolgz8mAMFbcEtjT1g+wF4CSlocrBnw=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.7.0 h1:BZHcxBETFHIdVyhyEfOvn/RdU/QGdLI4y34qQGjGWO0=
 github.com/grpc-ecosystem/grpc-gateway/v2 v2.7.0/go.mod h1:hgWBS7lorOAVIJEQMi4ZsPv9hVvWI6+ch50m39Pf2Ks=
-github.com/h2non/filetype v1.1.3/go.mod h1:319b3zT68BvV+WRj7cwy856M2ehB3HqNOt6sy1HndBY=
+github.com/h2non/filetype v1.1.4-0.20231228185113-6469358c2bcb/go.mod h1:319b3zT68BvV+WRj7cwy856M2ehB3HqNOt6sy1HndBY=
 github.com/hashicorp/consul/api v1.3.0/go.mod h1:MmDNSzIMUjNpY/mQ398R4bk2FnqQLoPndWW5VkKPlCE=
 github.com/hashicorp/consul/sdk v0.3.0/go.mod h1:VKf9jXwCTEY1QZP2MOLRhb5i/I/ssyNV1vwHyQBF0x8=
 github.com/hashicorp/errwrap v1.0.0/go.mod h1:YH+1FKiLXxHSkmPseP+kNlulaMuP3n2brvKWEqk/Jc4=
@@ -422,8 +423,8 @@ github.com/orca-zhang/ecache v1.1.1 h1:krk4+/ihsLPg9/k2zYeRa7dNespTQsFnRcLWaJGFN
 github.com/orca-zhang/ecache v1.1.1/go.mod h1:1/6HCddx1iAbafDyRdddq5v/0rZf5sCU/fkLZ3BhciQ=
 github.com/orca-zhang/idgen v0.0.0-20220909041521-2662ff4c3c3e h1:Ae9G+JXfh/uot6qX0yJ9av+NqQaspOsuJ/tYYeNu6eU=
 github.com/orca-zhang/idgen v0.0.0-20220909041521-2662ff4c3c3e/go.mod h1:QgMA6kZTutcdAVcYrWX06UvJ8kI/+7Bx5RaREcN+3Qg=
-github.com/orcastor/orcas v0.0.0-20221110042346-d17a55120671 h1:r5AalQT1GWjteY6RzAVgBkuDbWAl0++vO6IZSwxOr6s=
-github.com/orcastor/orcas v0.0.0-20221110042346-d17a55120671/go.mod h1:5vNwONga/9yQtRenqAyxRz4f5P7U2GnojeBdhnoSEi8=
+github.com/orcastor/orcas v0.0.0-20240312155935-d73f3b0c9de0 h1:KNI25UKNtbfFABUioC1HMhL3uo5li5CAYSUqCjJLVJc=
+github.com/orcastor/orcas v0.0.0-20240312155935-d73f3b0c9de0/go.mod h1:1IwFEfcy+vreRaaB+sXdToBB/WQuK8Gjfg+6f8uQ+s4=
 github.com/pact-foundation/pact-go v1.0.4/go.mod h1:uExwJY4kCzNPcHRj+hCR/HBbOOIwwtUjcrb0b5/5kLM=
 github.com/pascaldekloe/goe v0.0.0-20180627143212-57f6aae5913c/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=
 github.com/pborman/uuid v1.2.0/go.mod h1:X/NO0urCmaxf9VXbdlT7C2Yzkj2IKimNn4k+gtPdI/k=
