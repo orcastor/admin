@@ -4,13 +4,11 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #191a20;
+  background-color: #F8F8F8;
   transition: all 0.3s ease;
   .logo {
     box-sizing: border-box;
     height: 55px;
-    border-bottom: 1px solid #282a35;
-    box-shadow: 2px 0 6px rgb(0 21 41 / 35%);
     span {
       font-size: 22px;
       font-weight: bold;
@@ -20,7 +18,6 @@
     img {
       width: 30px;
       object-fit: contain;
-      margin-right: 8px;
     }
   }
   .el-scrollbar {
@@ -37,7 +34,7 @@
 .el-menu--popup {
   .el-menu-item {
     &.is-active {
-      background-color: #060708;
+      background-color: #fff;
       &::before {
         position: absolute;
         top: 0;
@@ -45,7 +42,6 @@
         left: 0;
         width: 4px;
         content: "";
-        background: $primary-color;
       }
     }
   }

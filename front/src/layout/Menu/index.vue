@@ -16,9 +16,9 @@
         :collapse="isCollapse"
         :collapse-transition="false"
         :unique-opened="true"
-        background-color="#191a20"
-        text-color="#bdbdc0"
-        active-text-color="#fff"
+        background-color="#F8F8F8"
+        text-color="#004482"
+        active-text-color="#EF7C00"
       >
         <SubItem :menu-list="menuList" />
       </el-menu>
