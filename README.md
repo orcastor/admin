@@ -31,4 +31,4 @@
 ### 注意事项 
 
 - `npm run build:pro`打包后的文件和webapp的放置到一起：
-`ln -s $(admin)/front/dist $(webapp)/dist/prvw`
+`ln -s $(admin)/front/dist $(webapp)/dist/admin`
